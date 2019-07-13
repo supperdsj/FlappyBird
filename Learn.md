@@ -4,3 +4,6 @@
 * 碰撞检测触发规则
 * 移动元素时使用 V 连接元素
 * 单例
+* 代码实现事件监听
+* Mathf.Lerp(a,b,v) 返回 a-b 间的值 v
+* Quaternion.Euler(x,y,z) 返回旋转值
