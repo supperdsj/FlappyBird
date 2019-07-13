@@ -17,6 +17,10 @@ public class MenuControllerScript : MonoBehaviour {
         CheckIfBirdsAreUnlocked();
     }
 
+    public void PlayGame() {
+        SceneFaderScript.instance.FadeIn("Gameplay");
+    }
+
     void MakeSingleton() {
         if (instance != null) {
             Destroy(this);
