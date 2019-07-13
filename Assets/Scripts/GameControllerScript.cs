@@ -13,6 +13,7 @@ public class GameControllerScript : MonoBehaviour {
     void Awake() {
         MakeSingleton();
         IsTheGameStartedForTheFirstTime();
+        // PlayerPrefs.DeleteAll();
     }
 
     void MakeSingleton() {
@@ -29,7 +30,7 @@ public class GameControllerScript : MonoBehaviour {
         if (!PlayerPrefs.HasKey("IsTheGameStartedForTheFirstTime")) {
             PlayerPrefs.SetInt(HIGH_SCORE,0);
             PlayerPrefs.SetInt(SELECTED_BIRD,0);
-            PlayerPrefs.SetInt(GREEN_BIRD,1);
+            PlayerPrefs.SetInt(GREEN_BIRD,0);
             PlayerPrefs.SetInt(RED_BIRD,0);
             PlayerPrefs.SetInt("IsTheGameStartedForTheFirstTime", 1);
         }
@@ -42,8 +43,9 @@ public class GameControllerScript : MonoBehaviour {
     public int GetHighscore() {
         return PlayerPrefs.GetInt(HIGH_SCORE);
     }
-    public void SetSelectedBird(int selectedBird) {
+    public int SetSelectedBird(int selectedBird) {
         PlayerPrefs.SetInt (SELECTED_BIRD, selectedBird);
+        return selectedBird;
     }
 
     public int GetSelectedBird() {
