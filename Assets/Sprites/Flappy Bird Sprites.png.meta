@@ -55,7 +55,7 @@ TextureImporter:
     second: GreenBird4
   - first:
       213: -6462699529281187060
-    second: Flappy Bird Sprites_23
+    second: PausePanel
   - first:
       213: 3755815422007417192
     second: EmptyButton
@@ -67,13 +67,13 @@ TextureImporter:
     second: BronzeMedal
   - first:
       213: 7848166926866087734
-    second: Flappy Bird Sprites_27
+    second: GoldMedal
   - first:
       213: -4860639630070131219
-    second: Flappy Bird Sprites_28
+    second: WhiteMedal
   - first:
       213: -8436936780237523554
-    second: Flappy Bird Sprites_29
+    second: PauseGameButton
   - first:
       213: 7463879149399538272
     second: Flappy Bird Sprites_30
@@ -82,7 +82,7 @@ TextureImporter:
     second: Ground
   - first:
       213: 3802307496682136100
-    second: Flappy Bird Sprites_32
+    second: GotoMenuButton
   - first:
       213: -6552382079645713034
     second: PlayGame
@@ -564,7 +564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_23
+      name: PausePanel
       rect:
         serializedVersion: 2
         x: 581
@@ -648,7 +648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_27
+      name: GoldMedal
       rect:
         serializedVersion: 2
         x: 317
@@ -669,7 +669,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_28
+      name: WhiteMedal
       rect:
         serializedVersion: 2
         x: 425
@@ -690,7 +690,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_29
+      name: PauseGameButton
       rect:
         serializedVersion: 2
         x: 542
@@ -753,7 +753,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_32
+      name: GotoMenuButton
       rect:
         serializedVersion: 2
         x: 19
