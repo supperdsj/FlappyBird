@@ -16,7 +16,15 @@ public class BirdScript : MonoBehaviour {
 
     Button flapButton;
 
+    AudioSource audioSource;
+    [SerializeField]
+    AudioClip flapClip, pointClip, diedClip;
+
+    public int score;
+
     void Awake() {
+        score = 0;
+        audioSource = GetComponent<AudioSource>();
         myRigidBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         if (instance == null) {
@@ -40,6 +48,7 @@ public class BirdScript : MonoBehaviour {
             if (didFlap) {
                 didFlap = false;
                 myRigidBody.velocity = new Vector2(0, bounceSpeed);
+                audioSource.PlayOneShot(flapClip);
                 anim.SetTrigger("Flap");
             }
 
@@ -66,10 +75,22 @@ public class BirdScript : MonoBehaviour {
         return transform.position.x;
     }
 
-    void Start() {
+    void OnCollisionEnter2D(Collision2D target) {
+        if (target.gameObject.tag == "Ground" || target.gameObject.tag == "Pipe") {
+            if (isAlive) {
+                isAlive = false;
+                anim.SetTrigger("Died");
+                audioSource.PlayOneShot(diedClip);
+            }
+        }
+
     }
 
-    // Update is called once per frame
-    void Update() {
+    void OnTriggerEnter2D(Collider2D target) {
+        if (target.tag == "PipeHolder") {
+            score++;
+            audioSource.PlayOneShot(pointClip);
+        }
     }
+
 }
