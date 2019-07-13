@@ -58,10 +58,10 @@ TextureImporter:
     second: Flappy Bird Sprites_23
   - first:
       213: 3755815422007417192
-    second: Flappy Bird Sprites_24
+    second: EmptyButton
   - first:
       213: 4059762669117696758
-    second: Flappy Bird Sprites_25
+    second: GooglePlayButton
   - first:
       213: -7289325287177181031
     second: BronzeMedal
@@ -85,10 +85,10 @@ TextureImporter:
     second: Flappy Bird Sprites_32
   - first:
       213: -6552382079645713034
-    second: Flappy Bird Sprites_33
+    second: PlayGame
   - first:
       213: -4584020314676575832
-    second: Flappy Bird Sprites_34
+    second: LeaderboardsButton
   - first:
       213: 2017779906799538684
     second: ConnectOnTwitterButton
@@ -585,7 +585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_24
+      name: EmptyButton
       rect:
         serializedVersion: 2
         x: 214
@@ -606,7 +606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_25
+      name: GooglePlayButton
       rect:
         serializedVersion: 2
         x: 397
@@ -774,7 +774,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_33
+      name: PlayGame
       rect:
         serializedVersion: 2
         x: 242
@@ -795,7 +795,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_34
+      name: LeaderboardsButton
       rect:
         serializedVersion: 2
         x: 510
